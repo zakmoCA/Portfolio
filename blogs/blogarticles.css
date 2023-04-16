@@ -1,0 +1,492 @@
+:root {
+  --primary-colour: #03045e;
+  --secondary-colour: #0b8a91;
+  --tertiary-colour: #252829;
+}
+
+body {
+  background-color: #fafafa;
+  color: var(--primary-colour);
+  font-family: 'League Spartan', sans-serif;
+  
+}
+
+/* <--- Navbar ---> */
+
+#zakmohamed {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+
+/* HAMBURGER MENU */
+
+/* Hide the checkbox */
+.menu-toggle {
+  display: none;
+}
+
+/* Style the hamburger button */
+.hamburger {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  color: var(--secondary-colour);
+}
+
+/* Hide the hamburger button and display navitems for larger screens */
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+  /* .navitems {
+    display: flex;
+    gap: 1rem;
+  } */
+}
+
+/* Style the navigation menu container for mobile screens*/
+@media screen and (max-width: 768px) {
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100%;
+    background-color: var(--tertiary-colour);
+    opacity: 0.9;
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+
+  /* Display navitems in a column */
+  .navitems {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+  }
+}
+
+
+/* When the checkbox is checked, display the navigation menu */
+.menu-toggle:checked ~ .nav-menu {
+  right: 0;
+}
+
+.menu-toggle:checked ~ .hamburger {
+  display: inline-block;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.navitems {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  
+}
+
+.navitems > li > a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+/* <--- Main ---> */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.blog-previews {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+  width: 90vw;
+}
+
+.blog-previews > article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  color: var(--tertiary-colour);
+  font-size: 1.25rem;
+  line-height: 1.15;
+  margin: 20px auto;
+  height: fit-content;
+  width: 90%;
+  padding: 1em;
+}
+
+.blog-previews > article > img {
+  width: 100%;
+  height: 40%;
+  margin: auto;
+  border-radius: 3%;
+}
+
+
+
+#see-more-articles {
+  border: 3px solid var(--secondary-colour);
+  color: var(--tertiary-colour);
+  font-weight: 600;
+  border-radius: 5%;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+hr {
+  width: 50%; 
+  border: 1px solid var(--secondary-colour);
+}
+
+
+/* <--- Footer ---> */
+
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2em;
+  padding-bottom: 1.5em;
+}
+
+.socials-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50vw;
+  
+}
+
+.socials-links > a > img {
+  width: 40px;
+}
+
+/* Tablet view */
+@media screen and (min-width: 768px) {
+  /* tablet-specific CSS styles here */
+  header {
+    margin: 2rem 0;
+  }
+
+  body {
+    max-width: 75vw;
+    margin: auto;
+    min-height: 100vh;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
+  #zakmohamed {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-menu {
+    width: 70%;
+  }
+
+  .navitems {
+    display: flex;
+    justify-content: space-between;
+    /* width: 30%; */
+    list-style: none;
+    align-items: center;
+
+  }
+  
+  .navitems > li > a {
+    text-decoration: none;
+    color: var(--primary-colour);
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }  
+
+  h1 {
+    opacity: 0.9;
+    font-size: 4em;
+    font-weight: 700;
+  }
+
+  .blog-previews {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    width: 90vw;
+  }
+  
+  .blog-previews > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    color: var(--tertiary-colour);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 20px auto;
+    height: fit-content;
+    width: 90%;
+    padding: 1em;
+  }
+  
+  .blog-previews > article > img {
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    border-radius: 3%;
+  }
+  
+  
+  
+  #see-more-articles {
+    border: 3px solid var(--secondary-colour);
+    color: var(--tertiary-colour);
+    font-weight: 600;
+    border-radius: 5%;
+    padding: 1rem;
+    text-decoration: none;
+  }
+  .socials {
+    padding-bottom: 1.5em;
+  }
+
+  .socials-links {
+    width: 30vw;
+  }
+}
+
+/* Desktop view */
+@media screen and (min-width: 1024px) {
+  /* desktop-specific CSS styles here */
+  header {
+    margin: 2rem 0;
+  }
+  
+  #zakmohamed {
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-menu {
+    width: 65%;
+  }
+
+  .navitems {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    
+
+  }
+  
+  .navitems > li > a {
+    text-decoration: none;
+    color: var(--primary-colour);
+    font-weight: 600;
+    font-size: 2rem;
+  }
+  
+
+  body {
+    width: 70vw;
+    height: 100vh;
+    max-width: 95%;
+    margin: auto;
+  }
+
+  h1 {
+    opacity: 0.9;
+    font-size: 4em;
+    font-weight: 700;
+  }
+
+  .blog-previews {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    width: 75vw;
+  }
+  
+  .blog-previews > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    color: var(--tertiary-colour);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin: 20px auto;
+    height: fit-content;
+    width: 90%;
+    padding: 1em;
+  }
+  
+  .blog-previews > article > img {
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    border-radius: 3%;
+  }
+  
+  
+  
+  #see-more-articles {
+    border: 3px solid var(--secondary-colour);
+    color: var(--tertiary-colour);
+    font-weight: 600;
+    border-radius: 5%;
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+  hr {
+    width: 50%; 
+    border: 1px solid var(--secondary-colour);
+  }
+
+  .socials-links {
+    width: 20vw;
+  }
+}
+
+/* Large Desktop view */
+@media screen and (min-width: 1480px) {
+  /* desktop-specific CSS styles here */
+  header {
+    margin: 2rem 0;
+  }
+  
+  #zakmohamed {
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: end;
+  }
+
+  .navitems {
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    list-style: none;
+
+  }
+  
+  .navitems > li > a {
+    text-decoration: none;
+    color: var(--primary-colour);
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    
+  }
+
+  body {
+    width: 70vw;
+    height: 100vh;
+    max-width: 95%;
+    margin: auto;
+  }
+
+  h1 {
+    opacity: 0.9;
+    font-size: 4em;
+    font-weight: 700;
+  }
+
+  .blog-previews {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    width: 50vw;
+  }
+  
+  .blog-previews > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    color: var(--tertiary-colour);
+    font-size: 2rem;
+    line-height: 1.5;
+    margin: 20px auto;
+    height: fit-content;
+    width: 90%;
+    padding: 1em;
+  }
+  
+  .blog-previews > article > img {
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    border-radius: 3%;
+  }
+  
+  
+  
+  #see-more-articles {
+    border: 3px solid var(--secondary-colour);
+    color: var(--tertiary-colour);
+    font-weight: 600;
+    border-radius: 5%;
+    padding: 1rem;
+    text-decoration: none;
+  }
+
+  hr {
+    width: 50%; 
+    border: 1px solid var(--secondary-colour);
+  }
+
+  .socials-links {
+    width: 20vw;
+  }
+}
