@@ -236,7 +236,7 @@ img#avatar {
   font-size: 1.25rem;
   line-height: 1.15;
   margin: 20px auto;
-  height: 70vh;
+  height: fit-content;
   width: 90%;
   padding: 1em;
 }
@@ -256,6 +256,10 @@ img#avatar {
   max-height: calc(1.2em * 10); /* Adjust the '4' to match the -webkit-line-clamp value */
   line-height: 1.2em; /* Adjust the line-height as needed */
   margin-bottom: 1.5rem; /* Add some space between the text and the 'See More' button */
+}
+
+.blog-previews > article > a {
+  margin-bottom: 2em;
 }
 
 #see-more-btn {
