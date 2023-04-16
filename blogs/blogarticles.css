@@ -6,7 +6,7 @@
 
 body {
   background-color: #fafafa;
-  color: var(--primary-colour);
+  color: var(--secondary-colour);
   font-family: 'League Spartan', sans-serif;
   
 }
@@ -32,7 +32,7 @@ body {
   border: none;
   display: flex;
   align-items: center;
-  color: var(--secondary-colour);
+  color: var(--primary-colour);
 }
 
 /* Hide the hamburger button and display navitems for larger screens */
@@ -114,6 +114,11 @@ main {
   
 }
 
+h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
 .blog-previews {
   display: flex;
   flex-direction: column;
@@ -161,28 +166,36 @@ hr {
 
 /* <--- Footer ---> */
 
+hr {
+  width: 50vw; 
+  border: 1px solid var(--secondary-colour);
+}
 
 .socials {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2em;
   padding-bottom: 1.5em;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 
 .socials-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  align-items: center;
   width: 50vw;
-  
 }
 
 .socials-links > a > img {
   width: 40px;
 }
 
-/* Tablet view */
+/* <--- Tablet view ---> */
 @media screen and (min-width: 768px) {
   /* tablet-specific CSS styles here */
   header {
@@ -238,11 +251,6 @@ hr {
     justify-content: space-between;
   }  
 
-  h1 {
-    opacity: 0.9;
-    font-size: 4em;
-    font-weight: 700;
-  }
 
   .blog-previews {
     display: flex;
@@ -336,12 +344,6 @@ hr {
     margin: auto;
   }
 
-  h1 {
-    opacity: 0.9;
-    font-size: 4em;
-    font-weight: 700;
-  }
-
   .blog-previews {
     display: flex;
     flex-direction: column;
@@ -355,11 +357,11 @@ hr {
     align-items: center;
     background-color: #ffffff;
     color: var(--tertiary-colour);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 1.5;
     margin: 20px auto;
     height: fit-content;
-    width: 90%;
+    width: 80%;
     padding: 1em;
   }
   
@@ -436,12 +438,6 @@ hr {
     margin: auto;
   }
 
-  h1 {
-    opacity: 0.9;
-    font-size: 4em;
-    font-weight: 700;
-  }
-
   .blog-previews {
     display: flex;
     flex-direction: column;
@@ -455,11 +451,11 @@ hr {
     align-items: center;
     background-color: #ffffff;
     color: var(--tertiary-colour);
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1.5;
     margin: 20px auto;
     height: fit-content;
-    width: 90%;
+    width: 80%;
     padding: 1em;
   }
   

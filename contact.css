@@ -6,7 +6,7 @@
 
 body {
   background-color: #fafafa;
-  color: var(--primary-colour);
+  color: var(--secondary-colour);
   font-family: 'League Spartan', sans-serif;
 
 }
@@ -32,7 +32,7 @@ body {
   border: none;
   display: flex;
   align-items: center;
-  color: var(--secondary-colour);
+  color: var(--primary-colour);
 }
 
 /* Hide the hamburger button and display navitems for larger screens */

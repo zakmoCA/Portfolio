@@ -6,7 +6,7 @@
 
 body {
   background-color: #fafafa;
-  color: var(--primary-colour);
+  color: var(--secondary-colour);
   font-family: 'League Spartan', sans-serif;
 
 }
@@ -34,7 +34,7 @@ a {
   border: none;
   display: flex;
   align-items: center;
-  color: var(--secondary-colour);
+  color: var(--primary-colour);
 }
 
 /* Hide the hamburger button and display navitems for larger screens */
@@ -118,6 +118,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
 }
 
 .hero-img-container {
@@ -128,7 +129,7 @@ main {
 
 img#avatar {
   border-radius: 50%;
-  min-width: 50vw;
+  min-width: 20vw;
   max-height: 35vh;
 }
 
@@ -138,33 +139,32 @@ img#avatar {
   justify-content: space-evenly;
   align-items: center;  
   margin: 0;
+  height: fit-content;
 }
 
 .textintro {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  
   text-align: center;
-  width: 55%;
+  /* width: 55%; */
   height: auto;
 }
 
 .hi {
   font-size: 2rem;
   font-weight: 300;
-  
+  color: var(--tertiary-colour);
 }
 
 .zak {
   opacity: 0.9;
   font-size: 3rem;
-  margin: none;
+  color: var(--secondary-colour);
 }
 
 .iBuild {
   opacity: 0.7;
   font-size: 2.5rem;
-  
+  color: var(--primary-colour);
 }
 
 /* <--- Resume and Contact buttons ---> */
@@ -212,9 +212,15 @@ img#avatar {
   font-size: 4em;
   font-weight: 700;
   text-align: center;
+  color: var(--secondary-colour);
+  text-underline-offset: 1rem;
 }
 
 /* <--- Blog Preview Cards ---> */
+
+.blog-preview-container {
+  margin-top: 100px;
+}
 
 .blog-previews {
   display: flex;
@@ -272,41 +278,46 @@ img#avatar {
 }
 
 #see-blog-btn {
-  border: 3px solid var(--primary-colour);
+  border: 5px solid var(--secondary-colour);
   border-radius: 5%;
   padding: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--tertiary-colour);
   text-decoration: none;
   
-}
-
-
-hr {
-  width: 50%; 
-  border: 1px solid var(--secondary-colour);
 }
 
 /* <--- Footer ---> */
 
 
+hr {
+  width: 50vw; 
+  border: 1px solid var(--secondary-colour);
+}
+
 .socials {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 2em;
   padding-bottom: 1.5em;
+  position: relative;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .socials-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   width: 50vw;
-  
 }
 
 .socials-links > a > img {
   width: 40px;
 }
+
 
 /* Tablet view */
 @media screen and (min-width: 768px) {
@@ -362,6 +373,59 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-end;
+    height: 60vh;
+  }
+
+
+  .hero-img-container {
+    order: 2;
+    margin: 0;
+  }
+
+  img#avatar {
+    border-radius: 50%;
+    min-width: 30vw;
+    max-height: 50vh;
+  }
+
+  .textintro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  .zak {
+    font-size: 3rem;
+  }
+
+  .iBuild {
+    font-size: 3rem;
+  }
+
+  .blog-previews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-previews > article {
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+    color: var(--tertiary-colour);
+    margin: 1em;
+    height: 80vh;
+    width: 65%;
+    padding: 1em;
+  }
+  
+  .blog-previews > article > img {
+    width: 100%;
+    height: 40%;
+    margin: auto;
+    border-radius: 3%;
   }
 }
 
@@ -402,78 +466,54 @@ hr {
     font-size: 2rem;
   }
   
-
-  
-}
-
-/* Large Desktop view */
-@media screen and (min-width: 1480px) {
-  /* desktop-specific CSS styles here */
-  header {
-    margin: 2rem 0;
-  }
-  
-  #zakmohamed {
-    font-weight: 600;
-    font-size: 2.5rem;
+  .hero-container {
+    height: fit-content;
   }
 
-  .nav-menu {
-    display: flex;
-    justify-content: end;
-  }
-
-  .navitems {
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    list-style: none;
-
-  }
-  
-  .navitems > li > a {
-    text-decoration: none;
-    color: var(--primary-colour);
-    font-weight: 600;
-    font-size: 2.5rem;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    
-  }
-
-  body {
-    width: 70vw;
-    height: 100vh;
-    max-width: 95%;
-    margin: auto;
-  }
-
-  img#toohey-zak {
-    min-height: 55vh;
-    max-width: 30vw;
-    border-radius: 50%;
-  }
-
-  h1 {
+  .blog-preview-container > div > p {
     opacity: 0.9;
     font-size: 4em;
     font-weight: 700;
   }
-
-  .aboutme-text > p {
-    line-height: 1.5;
-    font-size: 1.5rem;
+  
+  .blog-preview-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 60vh;
+    justify-content: space-between;
+    width: 60vw;
+    /* margin-bottom: 60px; */
   }
-
-  hr {
-    width: 50%; 
-    border: 1px solid var(--secondary-colour);
+  
+  .blog-previews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 100px;
   }
-
-  .socials-links {
-    width: 20vw;
+  
+  .blog-previews > article {
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+    color: var(--tertiary-colour);
+    margin: 1em;
+    height: 80vh;
+    width: 50%;
+    padding: 1em;
   }
+  
+  .blog-previews > article > img {
+    width: 100%;
+    height: 50%;
+    margin: auto;
+    border-radius: 3%;
+  }
+  
+  
 }
+
+
+
