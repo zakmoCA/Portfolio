@@ -382,6 +382,7 @@ hr {
     justify-content: space-between;
     align-items: flex-end;
     height: 60vh;
+    margin: 0;
   }
 
 
@@ -428,11 +429,7 @@ hr {
     height: 40vh;
   }
 
-  /* .hero-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } */
+  
 
   img#avatar {
     max-width: 20vw;
@@ -491,6 +488,7 @@ hr {
   
   .hero-container {
     height: fit-content;
+    margin: 0;
   }
 
   /***************************************/
