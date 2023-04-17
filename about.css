@@ -239,6 +239,15 @@ hr {
   }
 }
 
+/* Portyrait view for tablet */
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  img#toohey-zak {
+    min-height: 35vh;
+    max-width: 45vw;
+  }
+}
+
 /* Desktop view */
 @media screen and (min-width: 1024px) {
   /* desktop-specific CSS styles here */

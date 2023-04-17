@@ -334,6 +334,20 @@ hr {
   }
 }
 
+@media screen and (min-width: 768px) and (orientation: landscape) {
+  /* Styles for tablet devices (portrait mode) here */
+  .blog-previews > article {
+    background-color: #ffffff;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 5%;
+    color: var(--tertiary-colour);
+    margin: 1em;
+    height: 90vh;
+    width: 60%;
+    padding: 1em;
+  }
+}
+
 /* Desktop view */
 @media screen and (min-width: 1024px) {
   /* desktop-specific CSS styles here */

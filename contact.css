@@ -119,7 +119,7 @@ main > section > p {
 }
 
 .contact-links > a > img{
-  width: 30vw;
+  width: 15vw;
   border: 10px solid var(--secondary-colour);
   background-color: var(--secondary-colour);
   border-radius: 100%;
