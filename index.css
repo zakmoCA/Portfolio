@@ -218,7 +218,6 @@ img#avatar {
   height: fit-content;
   justify-content: space-between;
   width: 90vw;
-  /* margin-bottom: 60px; */
 }
 
 .blog-preview-container > div > p {
@@ -365,7 +364,6 @@ hr {
   .navitems {
     display: flex;
     justify-content: space-between;
-    /* width: 30%; */
     list-style: none;
     align-items: center;
 
@@ -378,11 +376,6 @@ hr {
     font-size: 1.5rem;
   }
   
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-  }  
-
   .hero-container {
     display: flex;
     flex-direction: row;
@@ -418,43 +411,13 @@ hr {
     font-size: 2rem;
   }
 
+  /***************************************/
+  /* BLOG PREVIEW-CARD COMPONENT*/
+  /***************************************/
+
+  /* Update for larger width for tablets */
   .blog-previews {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .blog-previews > article {
-    background-color: #ffffff;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 5%;
-    color: var(--tertiary-colour);
-    margin: 1em;
-    height: 80vh;
-    width: 65%;
-    padding: 1em;
-  }
-  
-  .blog-previews > article > img {
-    width: 100%;
-    height: 40%;
-    margin: auto;
-    border-radius: 3%;
-  }
-
-  /* Even though i only styled this button mobile first, it
-  breaks in deployment so i am moving them inside the media
-  queries as well */
-
-  #see-more-btn {
-    border: 3px solid var(--secondary-colour);
-    color: var(--tertiary-colour);
-    display: inline-block;
-    margin-bottom: 2em;
-    font-weight: 600;
-    border-radius: 5%;
-    padding: 1rem;
-    text-decoration: none;
+    width: 70vw;
   }
 }
 
@@ -532,62 +495,15 @@ hr {
     height: fit-content;
   }
 
-  .blog-preview-container > div > p {
-    opacity: 0.9;
-    font-size: 4em;
-    font-weight: 700;
-  }
-  
-  .blog-preview-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 60vh;
-    justify-content: space-between;
-    width: 60vw;
-    /* margin-bottom: 60px; */
-  }
-  
-  .blog-previews {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin-bottom: 100px;
-  }
-  
-  .blog-previews > article {
-    background-color: #ffffff;
-    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-    border-radius: 5%;
-    color: var(--tertiary-colour);
-    margin: 1em;
-    height: 80vh;
-    width: 50%;
-    padding: 1em;
-  }
-  
-  .blog-previews > article > img {
-    width: 100%;
-    height: 50%;
-    margin: auto;
-    border-radius: 3%;
-  }
-  
-    /* Even though i only styled this button mobile first, it
-  breaks in deployment so i am moving them inside the media
-  queries as well */
+  /***************************************/
+  /* BLOG PREVIEW-CARD COMPONENT*/
+  /***************************************/
 
-  #see-more-btn {
-    border: 3px solid var(--secondary-colour);
-    color: var(--tertiary-colour);
-    display: inline-block;
-    margin-bottom: 2em;
-    font-weight: 600;
-    border-radius: 5%;
-    padding: 1rem;
-    text-decoration: none;
+  /* Update width of preview cards for desktop view */
+  .blog-previews {
+    width: 70vw;
   }
+
 }
 
 
