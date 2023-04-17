@@ -8,11 +8,9 @@ body {
   background-color: #fafafa;
   color: var(--secondary-colour);
   font-family: 'League Spartan', sans-serif;
+  
 }
 
-a {
-  text-decoration: none;
-}
 
 #zakmohamed {
   font-weight: 600;
@@ -108,104 +106,18 @@ a {
   margin: 0;
 }
 
-/*************************************/
+/***************************************/
+
+
 
 /* <--- Main ---> */
 
-/* main {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: fit-content;
-} */
-
-/* <--- Hero image and introduction ---> */
-.hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 100px;
-}
-
-.hero-img-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
-
-img#avatar {
-  border-radius: 50%;
-  min-width: 20vw;
-  max-height: 35vh;
-}
-
-.intro {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;  
-  margin: 0;
-  height: fit-content;
-}
-
-.textintro {
-  
-  text-align: center;
-  /* width: 55%; */
-  height: auto;
-}
-
-.hi {
-  font-size: 2rem;
-  font-weight: 300;
-  color: var(--tertiary-colour);
-}
-
-.zak {
-  opacity: 0.9;
-  font-size: 2rem;
-  color: var(--secondary-colour);
-}
-
-.iBuild {
-  opacity: 0.7;
-  font-size: 2.5rem;
-  color: var(--primary-colour);
-}
-
-/* <--- Resume and Contact buttons ---> */
-.resume-contact {
-  display: flex;
-  justify-content: center;
   
 }
-
-#resume-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #FFFFFF;
-  background-color: var(--primary-colour);
-  padding: 1rem;
-  font-size: 2rem;
-  border-radius: 5%;
-  margin-right: 1em;
-}
-
-#contact-me-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 5px solid var(--secondary-colour);
-  color: #252829;
-  font-size: 2rem;
-  border-radius: 5%;
-  padding: 1rem;
-}
-
-/***************************************/
-
 
 /***************************************/
 /* BLOG PREVIEW-CARD COMPONENT*/
@@ -217,7 +129,7 @@ img#avatar {
   align-items: center;
   height: fit-content;
   justify-content: space-between;
-  /* width: 90vw; 6:19*/
+  width: 90vw;
 }
 
 .blog-preview-container > div > p {
@@ -231,6 +143,7 @@ img#avatar {
 .blog-previews {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 100px;
   width: 90vw;
 }
@@ -275,34 +188,12 @@ img#avatar {
   
 }
 
-
-/* Go to blog btn style and container*/
-.blog-link {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2em;
-  margin-bottom: 2em;
-}
-
-#see-blog-btn {
-  border: 5px solid var(--secondary-colour);
-  border-radius: 5%;
-  padding: 1rem;
-  font-size: 2rem;
-  font-weight: 600;
-  color: var(--tertiary-colour);
-  text-decoration: none;
-  
-}
-
 /***************************************/
 
 
 /***************************************/
 /* FOOTER COMPONENT*/
 /***************************************/
-
 
 hr {
   width: 50vw; 
@@ -320,10 +211,12 @@ hr {
   transform: translateX(-50%);
 }
 
+
 .socials-links {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
   width: 50vw;
 }
 
@@ -331,8 +224,14 @@ hr {
   width: 40px;
 }
 
+/***************************************/
 
-/* Tablet view */
+
+
+/***************************************/
+/* TABLET VIEW */
+/***************************************/
+
 @media screen and (min-width: 768px) {
   /* tablet-specific CSS styles here */
   header {
@@ -345,7 +244,6 @@ hr {
     min-height: 100vh;
   }
 
-  
   #zakmohamed {
     font-weight: 600;
     font-size: 1.5rem;
@@ -375,50 +273,26 @@ hr {
     font-weight: 600;
     font-size: 1.5rem;
   }
-  
-  .hero-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    height: 60vh;
-    margin: 0;
+
+  h1 {
+    opacity: 0.9;
+    font-size: 4em;
+    font-weight: 700;
   }
-
-
-  .hero-img-container {
-    order: 2;
-    margin: 0;
-  }
-
-  img#avatar {
-    border-radius: 50%;
-    min-width: 30vw;
-    /* max-height: 50vh; */
-  }
-
-  .textintro {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: start;
-  }
-
-  
-
-  .iBuild {
-    font-size: 2rem;
-  }
-
-  /***************************************/
-  /* BLOG PREVIEW-CARD COMPONENT*/
-  /***************************************/
-
-  /* Update for larger width for tablets */
+  /* increase blog card width for larger screens */
   .blog-previews {
     width: 70vw;
   }
+  
+  .socials {
+    padding-bottom: 1.5em;
+  }
+
+  .socials-links {
+    width: 30vw;
+  }
 }
+
 
 /* Desktop view */
 @media screen and (min-width: 1024px) {
@@ -457,25 +331,36 @@ hr {
     font-size: 2rem;
   }
   
+
   body {
     width: 70vw;
   }
 
-  .hero-container {
-    height: fit-content;
-    margin: 0;
+  h1 {
+    opacity: 0.9;
+    font-size: 4em;
+    font-weight: 700;
   }
 
-  /***************************************/
-  /* BLOG PREVIEW-CARD COMPONENT*/
-  /***************************************/
-
-  /* Update width of preview cards for desktop view */
-  .blog-previews {
-    width: 70vw;
+  .blog-previews > article > img {
+    height: 30%;
   }
 
+  .blog-previews > article > p {
+    line-height: 1.4em;
+  }
+  
+  #see-blog-btn {
+    border: 3px solid var(--primary-colour);
+    border-radius: 5%;
+    padding: 1rem;
+  }
+
+  hr {
+    width: 50%; 
+    border: 1px solid var(--secondary-colour);
+  }
+
+  
 }
-
-
 

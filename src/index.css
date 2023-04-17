@@ -8,17 +8,20 @@ body {
   background-color: #fafafa;
   color: var(--secondary-colour);
   font-family: 'League Spartan', sans-serif;
-  
 }
 
-/* <--- Navbar ---> */
+a {
+  text-decoration: none;
+}
 
 #zakmohamed {
   font-weight: 600;
   font-size: 1.25rem;
 }
 
-/* HAMBURGER MENU */
+/***************************************/
+/* HAMBURGER MENU COMPONENT*/
+/***************************************/
 
 /* Hide the checkbox */
 .menu-toggle {
@@ -105,19 +108,125 @@ body {
   margin: 0;
 }
 
+/*************************************/
+
 /* <--- Main ---> */
 
-main {
+/* main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: fit-content;
+} */
+
+/* <--- Hero image and introduction ---> */
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.hero-img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+img#avatar {
+  border-radius: 50%;
+  min-width: 20vw;
+  max-height: 35vh;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;  
+  margin: 0;
+  height: fit-content;
+}
+
+.textintro {
+  
+  text-align: center;
+  /* width: 55%; */
+  height: auto;
+}
+
+.hi {
+  font-size: 2rem;
+  font-weight: 300;
+  color: var(--tertiary-colour);
+}
+
+.zak {
+  opacity: 0.9;
+  font-size: 2rem;
+  color: var(--secondary-colour);
+}
+
+.iBuild {
+  opacity: 0.7;
+  font-size: 2.5rem;
+  color: var(--primary-colour);
+}
+
+/* <--- Resume and Contact buttons ---> */
+.resume-contact {
+  display: flex;
+  justify-content: center;
   
 }
 
-h1 {
-  text-align: center;
-  font-size: 2em;
+#resume-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  background-color: var(--primary-colour);
+  padding: 1rem;
+  font-size: 2rem;
+  border-radius: 5%;
+  margin-right: 1em;
 }
+
+#contact-me-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid var(--secondary-colour);
+  color: #252829;
+  font-size: 2rem;
+  border-radius: 5%;
+  padding: 1rem;
+}
+
+/***************************************/
+
+
+/***************************************/
+/* BLOG PREVIEW-CARD COMPONENT*/
+/***************************************/
+
+.blog-preview-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  justify-content: space-between;
+  /* width: 90vw; 6:19*/
+}
+
+.blog-preview-container > div > p {
+  opacity: 0.9;
+  font-size: 4em;
+  font-weight: 700;
+  text-align: center;
+}
+
 
 .blog-previews {
   display: flex;
@@ -127,17 +236,16 @@ h1 {
 }
 
 .blog-previews > article {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #ffffff;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 2%;
   color: var(--tertiary-colour);
   font-size: 1.25rem;
   line-height: 1.15;
   margin: 20px auto;
   height: fit-content;
   width: 90%;
-  padding: 1em;
+  padding: 20px 20px 40px;
 }
 
 .blog-previews > article > img {
@@ -147,24 +255,54 @@ h1 {
   border-radius: 3%;
 }
 
+.blog-previews > article > p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 10; /* Adjust the number of lines you want to show */
+  -webkit-box-orient: vertical;
+  max-height: calc(1.2em * 10); /* Adjust the '4' to match the -webkit-line-clamp value */
+  line-height: 1.2em; /* Adjust the line-height as needed */
+  margin-bottom: 1.5rem; /* Add some space between the text and the 'See More' button */
+}
 
-
-#see-more-articles {
+#see-more-btn {
   border: 3px solid var(--secondary-colour);
   color: var(--tertiary-colour);
   font-weight: 600;
   border-radius: 5%;
   padding: 1rem;
   text-decoration: none;
-}
-
-hr {
-  width: 50%; 
-  border: 1px solid var(--secondary-colour);
+  
 }
 
 
-/* <--- Footer ---> */
+/* Go to blog btn style and container*/
+.blog-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  margin-bottom: 2em;
+}
+
+#see-blog-btn {
+  border: 5px solid var(--secondary-colour);
+  border-radius: 5%;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--tertiary-colour);
+  text-decoration: none;
+  
+}
+
+/***************************************/
+
+
+/***************************************/
+/* FOOTER COMPONENT*/
+/***************************************/
+
 
 hr {
   width: 50vw; 
@@ -182,12 +320,10 @@ hr {
   transform: translateX(-50%);
 }
 
-
 .socials-links {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  align-items: center;
   width: 50vw;
 }
 
@@ -195,7 +331,8 @@ hr {
   width: 40px;
 }
 
-/* <--- Tablet view ---> */
+
+/* Tablet view */
 @media screen and (min-width: 768px) {
   /* tablet-specific CSS styles here */
   header {
@@ -208,13 +345,7 @@ hr {
     min-height: 100vh;
   }
 
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    
-  }
-
+  
   #zakmohamed {
     font-weight: 600;
     font-size: 1.5rem;
@@ -233,7 +364,6 @@ hr {
   .navitems {
     display: flex;
     justify-content: space-between;
-    /* width: 30%; */
     list-style: none;
     align-items: center;
 
@@ -246,52 +376,47 @@ hr {
     font-size: 1.5rem;
   }
   
-  .navbar {
+  .hero-container {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-  }  
-
-
-  .blog-previews {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-    width: 90vw;
-  }
-  
-  .blog-previews > article {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    background-color: #ffffff;
-    color: var(--tertiary-colour);
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin: 20px auto;
-    height: fit-content;
-    width: 90%;
-    padding: 1em;
+    height: 60vh;
+    margin: 0;
   }
-  
-  .blog-previews > article > img {
-    width: 100%;
-    height: 40%;
-    margin: auto;
-    border-radius: 3%;
+
+
+  .hero-img-container {
+    order: 2;
+    margin: 0;
   }
-  
-  
-  
-  #see-more-articles {
-    border: 3px solid var(--secondary-colour);
-    color: var(--tertiary-colour);
-    font-weight: 600;
-    border-radius: 5%;
-    padding: 1rem;
-    text-decoration: none;
+
+  img#avatar {
+    border-radius: 50%;
+    min-width: 30vw;
+    /* max-height: 50vh; */
   }
-  .socials {
-    padding-bottom: 1.5em;
+
+  .textintro {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+  }
+
+  
+
+  .iBuild {
+    font-size: 2rem;
+  }
+
+  /***************************************/
+  /* BLOG PREVIEW-CARD COMPONENT*/
+  /***************************************/
+
+  /* Update for larger width for tablets */
+  .blog-previews {
+    width: 70vw;
   }
 
   .socials-links {
@@ -336,153 +461,26 @@ hr {
     font-size: 2rem;
   }
   
-
   body {
     width: 70vw;
-    height: 100vh;
-    max-width: 95%;
-    margin: auto;
   }
 
-  .blog-previews {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-    width: 75vw;
-  }
-  
-  .blog-previews > article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    color: var(--tertiary-colour);
-    font-size: 1.25rem;
-    line-height: 1.5;
-    margin: 20px auto;
+  .hero-container {
     height: fit-content;
-    width: 80%;
-    padding: 1em;
-  }
-  
-  .blog-previews > article > img {
-    width: 100%;
-    height: 40%;
-    margin: auto;
-    border-radius: 3%;
-  }
-  
-  
-  
-  #see-more-articles {
-    border: 3px solid var(--secondary-colour);
-    color: var(--tertiary-colour);
-    font-weight: 600;
-    border-radius: 5%;
-    padding: 1rem;
-    text-decoration: none;
+    margin: 0;
   }
 
-  hr {
-    width: 50%; 
-    border: 1px solid var(--secondary-colour);
-  }
+  /***************************************/
+  /* BLOG PREVIEW-CARD COMPONENT*/
+  /***************************************/
 
-  .socials-links {
-    width: 20vw;
-  }
-}
-
-/* Large Desktop view */
-@media screen and (min-width: 1480px) {
-  /* desktop-specific CSS styles here */
-  header {
-    margin: 2rem 0;
-  }
-  
-  #zakmohamed {
-    font-weight: 600;
-    font-size: 2.5rem;
-  }
-
-  .nav-menu {
-    display: flex;
-    justify-content: end;
-  }
-
-  .navitems {
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    list-style: none;
-
-  }
-  
-  .navitems > li > a {
-    text-decoration: none;
-    color: var(--primary-colour);
-    font-weight: 600;
-    font-size: 2.5rem;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    
-  }
-
-  body {
+  /* Update width of preview cards for desktop view */
+  .blog-previews {
     width: 70vw;
-    height: 100vh;
-    max-width: 95%;
-    margin: auto;
   }
 
-  .blog-previews {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 100px;
-    width: 50vw;
-  }
   
-  .blog-previews > article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #ffffff;
-    color: var(--tertiary-colour);
-    font-size: 1.5rem;
-    line-height: 1.5;
-    margin: 20px auto;
-    height: fit-content;
-    width: 80%;
-    padding: 1em;
-  }
-  
-  .blog-previews > article > img {
-    width: 100%;
-    height: 40%;
-    margin: auto;
-    border-radius: 3%;
-  }
-  
-  
-  
-  #see-more-articles {
-    border: 3px solid var(--secondary-colour);
-    color: var(--tertiary-colour);
-    font-weight: 600;
-    border-radius: 5%;
-    padding: 1rem;
-    text-decoration: none;
-  }
-
-  hr {
-    width: 50%; 
-    border: 1px solid var(--secondary-colour);
-  }
-
-  .socials-links {
-    width: 20vw;
-  }
 }
+
+
+
