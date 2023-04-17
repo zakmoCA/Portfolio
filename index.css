@@ -20,7 +20,9 @@ a {
   font-size: 1.25rem;
 }
 
-/* HAMBURGER MENU */
+/***************************************/
+/* HAMBURGER MENU COMPONENT*/
+/***************************************/
 
 /* Hide the checkbox */
 .menu-toggle {
@@ -107,6 +109,10 @@ a {
   margin: 0;
 }
 
+/*************************************/
+
+/* <--- Main ---> */
+
 main {
   display: flex;
   flex-direction: column;
@@ -125,6 +131,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 0;
 }
 
 img#avatar {
@@ -197,11 +204,18 @@ img#avatar {
   padding: 1rem;
 }
 
+/***************************************/
+
+
+/***************************************/
+/* BLOG PREVIEW-CARD COMPONENT*/
+/***************************************/
+
 .blog-preview-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 60vh;
+  height: fit-content;
   justify-content: space-between;
   width: 90vw;
   /* margin-bottom: 60px; */
@@ -212,33 +226,28 @@ img#avatar {
   font-size: 4em;
   font-weight: 700;
   text-align: center;
-  color: var(--secondary-colour);
-  text-underline-offset: 1rem;
 }
 
-/* <--- Blog Preview Cards ---> */
-
-.blog-preview-container {
-  margin-top: 100px;
-}
 
 .blog-previews {
   display: flex;
   flex-direction: column;
+  margin-bottom: 100px;
   width: 90vw;
 }
 
 .blog-previews > article {
   background-color: #ffffff;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
-  border-radius: 5%;
+  border-radius: 2%;
+  border: 1px solid red;
   color: var(--tertiary-colour);
   font-size: 1.25rem;
   line-height: 1.15;
   margin: 20px auto;
   height: fit-content;
   width: 90%;
-  padding: 1em;
+  padding: 20px 20px 40px;
 }
 
 .blog-previews > article > img {
@@ -258,22 +267,16 @@ img#avatar {
   margin-bottom: 1.5rem; /* Add some space between the text and the 'See More' button */
 }
 
-/* .blog-previews > article > a {
-  display: inline-block;
-  margin-bottom: 2em;
-} */
-
 #see-more-btn {
   border: 3px solid var(--secondary-colour);
   color: var(--tertiary-colour);
-  display: inline-block;
-  margin-bottom: 2em;
   font-weight: 600;
   border-radius: 5%;
   padding: 1rem;
   text-decoration: none;
   
 }
+
 
 /* Go to blog btn style and container*/
 .blog-link {
@@ -295,7 +298,12 @@ img#avatar {
   
 }
 
-/* <--- Footer ---> */
+/***************************************/
+
+
+/***************************************/
+/* FOOTER COMPONENT*/
+/***************************************/
 
 
 hr {

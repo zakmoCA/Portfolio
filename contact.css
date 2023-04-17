@@ -12,13 +12,22 @@ body {
 }
 
 
-
+/* NAME TAG,should this be outside */
 #zakmohamed {
   font-weight: 600;
   font-size: 1.25rem;
 }
 
-/* HAMBURGER MENU */
+/***************************************/
+/* HAMBURGER MENU COMPONENT*/
+/***************************************/
+
+/* Hide the hamburger button and display navitems for larger screens */
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
 
 /* Hide the checkbox */
 .menu-toggle {
@@ -35,16 +44,6 @@ body {
   color: var(--primary-colour);
 }
 
-/* Hide the hamburger button and display navitems for larger screens */
-@media screen and (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-  /* .navitems {
-    display: flex;
-    gap: 1rem;
-  } */
-}
 
 /* Style the navigation menu container for mobile screens*/
 @media screen and (max-width: 768px) {
@@ -105,6 +104,10 @@ body {
   margin: 0;
 }
 
+/***************************************/
+/* END OF HAMBURGER MENU COMPONENT*/
+/***************************************/
+
 h1 {
   text-align: center;
   opacity: 0.9;
@@ -164,6 +167,7 @@ hr {
 .socials-links > a > img {
   width: 40px;
 }
+
 
 /* Tablet view */
 @media screen and (min-width: 768px) {
