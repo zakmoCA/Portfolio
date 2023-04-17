@@ -178,7 +178,13 @@ hr {
     min-height: 100vh;
   }
 
-  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+
   #zakmohamed {
     font-weight: 600;
     font-size: 1.5rem;
@@ -213,12 +219,7 @@ hr {
   .navbar {
     display: flex;
     justify-content: space-between;
-  }  
-
-  body {
-    width: 60vw;
-    height: 100vh;
-  }
+  }   
 
   main {
     display: flex;
@@ -287,14 +288,14 @@ hr {
   }
 
   .nav-menu {
-    width: 60%;
+    width: 65%;
   }
 
   .navitems {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    
+    /* align-items: center; */
   }
   
   .navitems > li > a {
@@ -305,9 +306,8 @@ hr {
     
   }
   
-
   body {
-    width: 60vw;
+    width: 70vw;
     height: 100vh;
     max-width: 95%;
     margin: auto;
