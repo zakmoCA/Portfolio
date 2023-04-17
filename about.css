@@ -11,6 +11,10 @@ body {
 
 }
 
+main {
+  margin-top: 100px;
+}
+
 
 #zakmohamed {
   font-weight: 600;
@@ -123,7 +127,7 @@ body {
 img#toohey-zak {
   border-radius: 50%;
   width: 50vw;
-  max-height: 25vh;
+  max-height: 30vh;
 }
 
 .aboutme-text {
@@ -315,9 +319,8 @@ hr {
   }
 
   img#toohey-zak {
-    width: 70%;
     min-height: 40vh;
-    max-width: 40vw;
+    max-width: 30vw;
     border-radius: 50%;
   }
 
@@ -342,69 +345,3 @@ hr {
   }
 }
 
-/* Large Desktop view */
-@media screen and (min-width: 1480px) {
-  /* desktop-specific CSS styles here */
-  header {
-    margin: 2rem 0;
-  }
-  
-  #zakmohamed {
-    font-weight: 600;
-    font-size: 2.5rem;
-  }
-
-  .nav-menu {
-    display: flex;
-    justify-content: end;
-  }
-
-  .navitems {
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    list-style: none;
-
-  }
-  
-  .navitems > li > a {
-    text-decoration: none;
-    color: var(--primary-colour);
-    font-weight: 600;
-    font-size: 2.5rem;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    
-  }
-
-  body {
-    width: 70vw;
-    height: 100vh;
-    max-width: 95%;
-    margin: auto;
-  }
-
- 
-  h1 {
-    opacity: 0.9;
-    font-size: 4em;
-    font-weight: 700;
-  }
-
-  .aboutme-text > p {
-    line-height: 1.5;
-    font-size: 1.5rem;
-  }
-
-  hr {
-    width: 50%; 
-    border: 1px solid var(--secondary-colour);
-  }
-
-  .socials-links {
-    width: 20vw;
-  }
-}
