@@ -313,9 +313,6 @@ hr {
   
   body {
     width: 70vw;
-    height: 100vh;
-    max-width: 95%;
-    margin: auto;
   }
 
   h1 {
@@ -343,100 +340,6 @@ hr {
 
   hr {
     width: 90%; 
-    border: 1px solid var(--secondary-colour);
-  }
-
-  .socials {
-    padding-bottom: 1.5em;
-    position: fixed;
-    display: flex;
-    width: 50%;
-    flex-direction: column;
-    align-items: center;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-
-  .socials-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 30vw;
-    padding-top: 1.5em;
-    
-  }
-}
-
-/* Large Desktop view */
-@media screen and (min-width: 1480px) {
-  /* desktop-specific CSS styles here */
-  header {
-    margin: 2rem 0;
-  }
-  
-  #zakmohamed {
-    font-weight: 600;
-    font-size: 2.5rem;
-  }
-
-  .nav-menu {
-    display: flex;
-    justify-content: end;
-  }
-
-  .navitems {
-    display: flex;
-    justify-content: space-evenly;
-    width: 90%;
-    list-style: none;
-
-  }
-  
-  .navitems > li > a {
-    text-decoration: none;
-    color: var(--primary-colour);
-    font-weight: 600;
-    font-size: 2.5rem;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    
-  }
-
-  body {
-    width: 60vw;
-    height: 100vh;
-    max-width: 95%;
-    margin: auto;
-  }
-
-  h1 {
-    opacity: 0.9;
-    font-size: 4em;
-    font-weight: 700;
-  }
-
-  .contact-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 3em 0;
-  }
-
-
-  .contact-links > a > img {
-    width: 10vw;
-    border: 10px solid var(--secondary-colour);
-    background-color: var(--secondary-colour);
-    border-radius: 100%;
-    
-  }
-
-  hr {
-    width: 70%; 
     border: 1px solid var(--secondary-colour);
   }
 

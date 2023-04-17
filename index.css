@@ -420,35 +420,6 @@ hr {
   }
 }
 
-/* <--- Tablet Portrait Mode ---> */
-@media screen and (min-width: 768px) and (orientation: portrait) {
-  /* Add your styles for tablet devices (portrait mode) here */
-  /* .hero-img-container {
-    order: 2;
-    margin: 0;
-    height: 40vh;
-  }
-
-  
-
-  img#avatar {
-    max-width: 20vw;
-    max-height: 50vh;
-  }  
-
-  .hero-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-    height: 50vh;
-  }
-
-  #iBuild {
-    font-size: 2rem;
-  } */
-}
-
 /* Desktop view */
 @media screen and (min-width: 1024px) {
   /* desktop-specific CSS styles here */
@@ -486,6 +457,10 @@ hr {
     font-size: 2rem;
   }
   
+  body {
+    width: 70vw;
+  }
+
   .hero-container {
     height: fit-content;
     margin: 0;
