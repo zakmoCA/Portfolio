@@ -479,6 +479,9 @@ hr {
     height: 50vh;
   }
 
+  #iBuild {
+    font-size: 2.5rem;
+  }
 }
 
 /* Desktop view */
