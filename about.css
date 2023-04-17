@@ -113,8 +113,8 @@ body {
 
 img#toohey-zak {
   border-radius: 50%;
-  min-width: 50vw;
-  max-height: 35vh;
+  width: 40vw;
+  max-height: 30vh;
 }
 
 .aboutme-text > p {
@@ -287,9 +287,7 @@ hr {
   img#toohey-zak {
     width: 70%;
     min-height: 40vh;
-    max-height: 50vh;
-    min-width: 40vw;
-    /* max-width: 40vw; */
+    max-width: 40vw;
     border-radius: 50%;
   }
 
@@ -359,12 +357,7 @@ hr {
     margin: auto;
   }
 
-  img#toohey-zak {
-    min-height: 55vh;
-    max-width: 30vw;
-    border-radius: 50%;
-  }
-
+ 
   h1 {
     opacity: 0.9;
     font-size: 4em;

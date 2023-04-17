@@ -451,6 +451,36 @@ hr {
   }
 }
 
+/* <--- Tablet Portrait Mode ---> */
+@media screen and (min-width: 768px) and (orientation: portrait) {
+  /* Add your styles for tablet devices (portrait mode) here */
+  .hero-img-container {
+    order: 2;
+    margin: 0;
+    height: 40vh;
+  }
+
+  /* .hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+
+  img#avatar {
+    max-width: 20vw;
+    max-height: 50vh;
+  }  
+
+  .hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    height: 50vh;
+  }
+
+}
+
 /* Desktop view */
 @media screen and (min-width: 1024px) {
   /* desktop-specific CSS styles here */
