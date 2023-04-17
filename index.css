@@ -164,7 +164,7 @@ img#avatar {
 
 .zak {
   opacity: 0.9;
-  font-size: 3rem;
+  font-size: 2rem;
   color: var(--secondary-colour);
 }
 
@@ -403,9 +403,7 @@ hr {
     text-align: start;
   }
 
-  .zak {
-    font-size: 3rem;
-  }
+  
 
   .iBuild {
     font-size: 2rem;
