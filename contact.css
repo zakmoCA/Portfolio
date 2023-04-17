@@ -22,13 +22,6 @@ body {
 /* HAMBURGER MENU COMPONENT*/
 /***************************************/
 
-/* Hide the hamburger button and display navitems for larger screens */
-@media screen and (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
-}
-
 /* Hide the checkbox */
 .menu-toggle {
   display: none;
@@ -43,6 +36,15 @@ body {
   align-items: center;
   color: var(--primary-colour);
 }
+
+/* Hide the hamburger button and display navitems for larger screens */
+@media screen and (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}
+
+
 
 
 /* Style the navigation menu container for mobile screens*/
@@ -207,7 +209,6 @@ hr {
   .navitems {
     display: flex;
     justify-content: space-between;
-    /* width: 30%; */
     list-style: none;
     align-items: center;
 
@@ -241,10 +242,11 @@ hr {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 3em 0;
+    width: 50vw;
   }
 
   .contact-links > a > img{
-    width: 10vw;
+    width: 7vw;
     max-height: 20vh;
     border: 10px solid var(--secondary-colour);
     background-color: var(--secondary-colour);
@@ -299,7 +301,6 @@ hr {
     display: flex;
     justify-content: space-between;
     list-style: none;
-    /* align-items: center; */
   }
   
   .navitems > li > a {
@@ -328,11 +329,12 @@ hr {
     flex-direction: row;
     justify-content: space-evenly;
     padding: 3em 0;
+    width: 50vw;
   }
 
 
   .contact-links > a > img {
-    width: 10vw;
+    width: 7vw;
     border: 10px solid var(--secondary-colour);
     background-color: var(--secondary-colour);
     border-radius: 100%;
