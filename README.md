@@ -1,19 +1,15 @@
 
 
 # [My Website](https://zakeriya-mohamed-t1-a2.vercel.app/)
-# [My Site Repo (GitHub)](https://zakeriya-mohamed-t1-a2.vercel.app/)
+# [My Site Repo (GitHub)](https://github.com/zakmoCA/ZakeriyaMohamed_T1A2)
 
-Images will be formatted as below
-![alt text](image.jpg)
+
 
 # Table of Contents
 
 1. [Purpose of Portfolio](#purpose-of-portfolio)
 2. [Target Audience](#target-audience)
-3. [Design Choices](#design-choices)
-   1. [General Layout](#general-layout)
-   2. [Colour Palette](#colour-palette)
-   3. [Components](#components)
+3. [Components](#components)
 4. [Sitemap](#sitemap)
 5. [Wireframes](#wireframes)
    1. [Mobile View](#mobile-view-wireframes)
@@ -28,53 +24,132 @@ Images will be formatted as below
 
 
 # Purpose of Portfolio
-Content for Purpose of Portfolio.
+The purpose of my Portfolio is to both learn HTML/CSS, and showcase projects I will be building over the course and year.
 
 # Target Audience
-Content for Target Audience.
+My target audience are fellow developers and prospective employers.
 
-# Design Choices
-Content for Design Choices.
-
-## General Layout
-Content for General Layout.
-
-## Colour Palette
-Content for Colour Palette.
 
 ## Components
 Content for Components.
 
 ### Nav/Header Component
-![Nav/Header Component](image-file-name-nav-header.png)
+
+Nav Mobile
+
+
+![Nav/Header Component Mobile](/docs/tabletscreenshotsnComponents/navBurgerComponent.png)
+
+
+![Nav Component Mobile](/docs/tabletscreenshotsnComponents/mobileNavComponent.png)
+
+
+
+Nav Tablet/Desktop
+
+
+![Nav/Header Component Tablet/Desktop](/docs/tabletscreenshotsnComponents/navbarComponent.png)
+
+
 
 ### Hero Component
-![Hero Component](image-file-name-hero.png)
+
+
+![Hero Component](/docs/tabletscreenshotsnComponents/heroComponent.png)
+
+
+### Hero Text Component
+
+
+![Hero Text Component](/docs/tabletscreenshotsnComponents/heroTextComponent.png)
+
+
 
 ### Blog Preview Card Component
-![Blog Preview Card Component](image-file-name-blog-preview-card.png)
+
+
+![Blog Preview Card Component](/docs/tabletscreenshotsnComponents/blogPreviewComponent.png)
+
+
 
 ### Footer Component
-![Footer Component](image-file-name-footer.png)
 
-### Contact-Links Component
-![Contact-Links Component](image-file-name-contact-links.png)
+
+![Footer Component](/docs/tabletscreenshotsnComponents/footerComponent.png)
+
+
+### Copyright Component
+
+![Copyright Component](/docs/tabletscreenshotsnComponents/copyrightComponent.png)
+
+
 
 # Sitemap
 Content for Sitemap.
 
+
+![Sitemap](/docs/Sitemap.jpg)
+
 # Wireframes
 
-## Mobile View Wireframes
-Content for Mobile View Wireframes.
+
+## Desktop/Tablet Wireframes
+
+My desktop and tablet layouts are similar in orientation, but just differ in size to suit the 
+
+larger versus smaller screen size differences between the two, although most modern tablets
+
+are big enough that I didn't think I needed to accommodate the tablet view with a more economic 
+
+layout versus the desktop view, unlike the marked difference between a smartphone and a tablet for example.
+
+Home
+
+![Homepage Wireframe](/docs/Wireframes/Homepage%20Desktop.png)
+
+About Me
+
+![About page wireframe](/docs/Wireframes/About%20Me%20Desktop.png)
+
+Blog 
+
+![Blog page wireframe](/docs/Wireframes/Blog%20Desktop.png)
+
+Contact Me
+
+![Contact page wireframe](/docs/Wireframes/Contact%20Me%20Desktop.png)
+
+Blog Article
+
+![Article page wireframe](/docs/Wireframes/Blog%20Articles%20Desktop.png)
 
 
 
-## Tablet View Wireframes
-Content for Tablet View Wireframes.
+## Mobile Wireframes
 
-## Desktop View Wireframes
-Content for Desktop View Wireframes..
+Home
+
+![Homepage Mobile Wireframe](/docs/Wireframes/Homepage%20Mobile.png)
+
+About Me
+
+![About page mobile wireframe](/docs/Wireframes/About%20Mobile.png)
+
+Blog 
+
+![Blog page mobile wireframe](/docs/Wireframes/Blog%20Mobile.png)
+
+Contact Me
+
+![Contact page mobile wireframe](/docs/Wireframes/Contact%20Mobile%20copy.png)
+
+Blog Article
+
+![Article page mobile wireframe](/docs/Wireframes/Blog%20Article%20Mobile.png)
+
+
+
+
 
 # Screenshots
 
@@ -168,5 +243,8 @@ I used HTML and CSS for this portfolio design. For version control I used Git an
 
 My code editor was VScode. Resources I used were my course lectures and;
 
-- w3schools (provide links)
-- Web-Dev Simplified (provide links)
+- w3schools 
+- Web-Dev Simplified 
+
+
+[def]: /docs/Wireframes/Blog%20Article%20Mobile.png"
