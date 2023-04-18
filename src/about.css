@@ -181,6 +181,10 @@ hr {
   width: 40px;
 }
 
+.copyright {
+  color: var(--primary-colour);
+}
+
 
 /* Tablet view */
 @media screen and (min-width: 768px) {
