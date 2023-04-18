@@ -68,6 +68,8 @@ Content for Sitemap.
 ## Mobile View Wireframes
 Content for Mobile View Wireframes.
 
+
+
 ## Tablet View Wireframes
 Content for Tablet View Wireframes.
 
@@ -77,53 +79,86 @@ Content for Desktop View Wireframes..
 # Screenshots
 
 ## Mobile View Screenshots
-Content for Mobile View Screenshots.
-![Mobile Screenshot 1](image-file-name-1.png)
 
-![Mobile Screenshot 2](image-file-name-2.png)
 
-![Mobile Screenshot 3](image-file-name-3.png)
+Home.
 
-![Mobile Screenshot 4](image-file-name-4.png)
+![Home screenshot (mobile)](/docs/mobileScreenshots/homemobile.PNG)
 
-![Mobile Screenshot 5](image-file-name-5.png)
+
+Blog preview card.
+
+![Blog preview card screenshot (mobile)](/docs/mobileScreenshots/blogcardmobile.PNG)
+
+Home footer. 
+
+![Home footer screenshot (mobile)](/docs/mobileScreenshots/homefootermobile.PNG)
+
+About me.
+
+![About me page screenshot (mobile)](/docs/mobileScreenshots/aboutmemobile.PNG)
+
+Contact me.
+
+![Contact me page screenshot (mobile)](/docs/mobileScreenshots/contactmemobile.PNG)
+
+Blog article.
+
+![Blog article page screenshot (mobile)](/docs/mobileScreenshots/blogarticlemobile.PNG)
 
 ## Tablet View Screenshots
 Content for Tablet View Screenshots.
 
-![Tablet Portrait Screenshot 1](image-file-name-6.png)
+Home.
 
-![Tablet Portrait Screenshot 2](image-file-name-7.png)
+![Home screenshot](/docs/tabletscreenshotsnComponents/hometab.PNG)
 
-![Tablet Portrait Screenshot 3](image-file-name-8.png)
 
-![Tablet Portrait Screenshot 4](image-file-name-9.png)
+Blog preview card.
 
-![Tablet Portrait Screenshot 5](image-file-name-10.png)
+![Blog preview card screenshot](/docs/tabletscreenshotsnComponents/blogPreviewComponent.png)
 
-![Tablet Landscape Screenshot 1](image-file-name-11.png)
+Home footer. 
 
-![Tablet Landscape Screenshot 2](image-file-name-12.png)
+![Home footer screenshot](/docs/tabletscreenshotsnComponents/homefootertab.PNG)
 
-![Tablet Landscape Screenshot 3](image-file-name-13.png)
+About me.
 
-![Tablet Landscape Screenshot 4](image-file-name-14.png)
+![About me page screenshot](/docs/tabletscreenshotsnComponents/aboutmetab.PNG)
 
-![Tablet Landscape Screenshot 5](image-file-name-15.png)
+Contact me.
+
+![Contact me page screenshot](/docs/tabletscreenshotsnComponents/contactmetab.PNG)
+
+Blog article.
+
+![Blog article page screenshot](/docs/tabletscreenshotsnComponents/blogtab.PNG)
 
 
 ## Desktop View Screenshots
 Content for Desktop View Screenshots.
 
-![Desktop Screenshot 1](image-file-name-16.png)
+Home.
 
-![Desktop Screenshot 2](image-file-name-17.png)
+![Home screenshot](/docs/desktopScreenshots/homeDesktop.png)
 
-![Desktop Screenshot 3](image-file-name-18.png)
 
-![Desktop Screenshot 4](image-file-name-19.png)
+Blog.
 
-![Desktop Screenshot 5](image-file-name-20.png)
+![Blog preview card screenshot](/docs/desktopScreenshots/blogDesktop.png)
+
+
+About me.
+
+![About me page screenshot](/docs/desktopScreenshots/aboutmeDesktop.png)
+
+Contact me.
+
+![Contact me page screenshot](/docs/desktopScreenshots/contactDesktop.png)
+
+Blog article.
+
+![Blog article page screenshot](/docs/desktopScreenshots/articleDesktop.png)
 
 
 # Tech Stack
