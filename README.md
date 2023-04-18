@@ -72,7 +72,7 @@ Content for Mobile View Wireframes.
 Content for Tablet View Wireframes.
 
 ## Desktop View Wireframes
-Content for Desktop View Wireframes.
+Content for Desktop View Wireframes..
 
 # Screenshots
 
