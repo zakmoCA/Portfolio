@@ -259,13 +259,6 @@ hr {
     font-size: 1.5rem;
   }
 
-  .socials {
-    padding-bottom: 1.5em;
-  }
-
-  .socials-links {
-    width: 30vw;
-  }
 }
 
 /* Portyrait view for tablet */
@@ -316,11 +309,11 @@ hr {
   
 
   body {
-    width: 70vw;
+    width: 90vw;
   }
 
   img#toohey-zak {
-    min-height: 40vh;
+    min-height: 30vh;
     max-width: 30vw;
     border-radius: 50%;
   }
@@ -336,11 +329,34 @@ hr {
     font-size: 1.5rem;
   }
 
-  hr {
-    width: 50%; 
-    border: 1px solid var(--secondary-colour);
-  }
-
-  
 }
 
+/* Large Desktop view */
+@media screen and (min-width: 1480px) {
+  /* desktop-specific CSS styles here */
+  
+  header {
+    width: 50vw;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  img#toohey-zak {
+    width: 20vw;
+    height: 70vh;
+  }
+
+  .aboutme-text {
+    width: 65%;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

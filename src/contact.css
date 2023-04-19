@@ -332,3 +332,21 @@ footer {
 
   
 }
+
+
+/* Large Desktop view */
+@media screen and (min-width: 1480px) {
+  /* desktop-specific CSS styles here */
+  
+  header {
+    width: 50vw;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
