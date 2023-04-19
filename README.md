@@ -9,17 +9,18 @@
 
 1. [Purpose of Portfolio](#purpose-of-portfolio)
 2. [Target Audience](#target-audience)
-3. [Components](#components)
-4. [Sitemap](#sitemap)
-5. [Wireframes](#wireframes)
+3. [Colour Palette](#colour-palette)
+4. [Components](#components)
+5. [Sitemap](#sitemap)
+6. [Wireframes](#wireframes)
    1. [Mobile View](#mobile-view-wireframes)
    2. [Tablet View](#tablet-view-wireframes)
    3. [Desktop View](#desktop-view-wireframes)
-6. [Screenshots](#screenshots)
+7. [Screenshots](#screenshots)
    1. [Mobile View](#mobile-view-screenshots)
    2. [Tablet View](#tablet-view-screenshots)
    3. [Desktop View](#desktop-view-screenshots)
-7. [Tech Stack](#tech-stack)
+8. [Tech Stack](#tech-stack)
 
 
 
@@ -30,8 +31,13 @@ The purpose of my Portfolio is to both learn HTML/CSS, and showcase projects I w
 My target audience are fellow developers and prospective employers.
 
 
-## Components
-Content for Components.
+# Colour Palette 
+
+![Colour Palette](/docs/colorPalette.png)
+
+
+# Components
+
 
 ### Nav/Header Component
 
@@ -85,7 +91,7 @@ Nav Tablet/Desktop
 
 
 # Sitemap
-Content for Sitemap.
+
 
 
 ![Sitemap](/docs/MySitemap.png)
@@ -247,4 +253,3 @@ My code editor was VScode. Resources I used were my course lectures and;
 - Web-Dev Simplified 
 
 
-[def]: /docs/Wireframes/Blog%20Article%20Mobile.png"
