@@ -3,6 +3,8 @@
 # [My Website](https://zakeriya-mohamed-t1-a2.vercel.app/)
 # [My Site Repo (GitHub)](https://github.com/zakmoCA/ZakeriyaMohamed_T1A2)
 
+# [My Presentation](https://youtu.be/JISfT05ZiEA)
+
 
 
 # Table of Contents
@@ -102,11 +104,8 @@ Nav Tablet/Desktop
 ## Desktop/Tablet Wireframes
 
 My desktop and tablet layouts are similar in orientation, but just differ in size to suit the 
-
-larger versus smaller screen size differences between the two, although most modern tablets
-
+larger versus smaller screen size differences between the two. Although most modern tablets
 are big enough that I didn't think I needed to accommodate the tablet view with a more economic 
-
 layout versus the desktop view, unlike the marked difference between a smartphone and a tablet for example.
 
 Home
