@@ -40,10 +40,6 @@ body {
   .hamburger {
     display: none;
   }
-  /* .navitems {
-    display: flex;
-    gap: 1rem;
-  } */
 }
 
 /* Style the navigation menu container for mobile screens*/
@@ -119,6 +115,9 @@ h1 {
   font-size: 2em;
 }
 
+/***************************************/
+/* BLOG CARD COMPONENT*/
+/***************************************/
 .blog-previews {
   display: flex;
   flex-direction: column;
@@ -201,7 +200,7 @@ hr {
 
 /* <--- Tablet view ---> */
 @media screen and (min-width: 768px) {
-  /* tablet-specific CSS styles here */
+  
   header {
     margin: 2rem 0;
   }
@@ -237,7 +236,6 @@ hr {
   .navitems {
     display: flex;
     justify-content: space-between;
-    /* width: 30%; */
     list-style: none;
     align-items: center;
 

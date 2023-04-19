@@ -123,6 +123,7 @@ main > section > p {
   font-size: 1.5 rem;
 }
 
+/* Socials Contact Links */
 .contact-links > a > img{
   width: 15vw;
   border: 10px solid var(--secondary-colour);
@@ -264,7 +265,7 @@ footer {
 
 /* Desktop view */
 @media screen and (min-width: 1024px) {
-  /* desktop-specific CSS styles here */
+  
   header {
     margin: 2rem 0;
   }
@@ -336,7 +337,7 @@ footer {
 
 /* Large Desktop view */
 @media screen and (min-width: 1480px) {
-  /* desktop-specific CSS styles here */
+  
   
   header {
     width: 50vw;

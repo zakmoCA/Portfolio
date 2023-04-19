@@ -250,5 +250,6 @@ My code editor was VScode. Resources I used were my course lectures and;
 
 - w3schools 
 - Web-Dev Simplified 
+- Mozilla MDN Documents
 
 

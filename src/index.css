@@ -152,7 +152,6 @@ img#avatar {
 .textintro {
   
   text-align: center;
-  /* width: 55%; */
   height: auto;
 }
 
@@ -219,7 +218,7 @@ img#avatar {
   justify-content: space-between;
   /* width: 90vw; 6:19*/
 }
-
+/* Blog Text Component */
 .blog-preview-container > div > p {
   opacity: 0.9;
   font-size: 4em;
@@ -255,14 +254,15 @@ img#avatar {
   border-radius: 3%;
 }
 
+/* Prevent text in previews from overflowing */
 .blog-previews > article > p {
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 10; /* Adjust the number of lines you want to show */
+  -webkit-line-clamp: 10; /* Adjust the number of lines to show */
   -webkit-box-orient: vertical;
-  max-height: calc(1.2em * 10); /* Adjust the '4' to match the -webkit-line-clamp value */
-  line-height: 1.2em; /* Adjust the line-height as needed */
-  margin-bottom: 1.5rem; /* Add some space between the text and the 'See More' button */
+  max-height: calc(1.2em * 10); 
+  line-height: 1.2em; 
+  margin-bottom: 1.5rem; 
 }
 
 #see-more-btn {
@@ -337,7 +337,7 @@ hr {
 
 /* Tablet view */
 @media screen and (min-width: 768px) {
-  /* tablet-specific CSS styles here */
+  
   header {
     margin: 2rem 0;
   }
@@ -397,7 +397,6 @@ hr {
   img#avatar {
     border-radius: 50%;
     min-width: 30vw;
-    /* max-height: 50vh; */
   }
 
   .textintro {
@@ -429,7 +428,7 @@ hr {
 
 /* Desktop view */
 @media screen and (min-width: 1024px) {
-  /* desktop-specific CSS styles here */
+  
   header {
     margin: 2rem 0;
   }
@@ -485,7 +484,7 @@ hr {
 
 /* Large Desktop view */
 @media screen and (min-width: 1480px) {
-  /* desktop-specific CSS styles here */
+  
   .blog-previews {
     width: 50vw;
   }

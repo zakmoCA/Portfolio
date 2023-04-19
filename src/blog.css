@@ -41,10 +41,6 @@ body {
   .hamburger {
     display: none;
   }
-  /* .navitems {
-    display: flex;
-    gap: 1rem;
-  } */
 }
 
 /* Style the navigation menu container for mobile screens*/
@@ -168,6 +164,7 @@ main {
   border-radius: 3%;
 }
 
+/* Blog Text Component */
 .blog-previews > article > p {
   overflow: hidden;
   display: -webkit-box;
@@ -371,7 +368,7 @@ hr {
 
 /* Large Desktop view */
 @media screen and (min-width: 1480px) {
-  /* desktop-specific CSS styles here */
+  
   .blog-previews {
     width: 50vw;
   }
