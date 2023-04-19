@@ -88,7 +88,7 @@ Nav Tablet/Desktop
 Content for Sitemap.
 
 
-![Sitemap](/docs/Sitemap.jpg)
+![Sitemap](/docs/MySitemap.png)
 
 # Wireframes
 
