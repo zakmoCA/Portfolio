@@ -21,6 +21,12 @@ main {
   font-size: 1.25rem;
 }
 
+img#toohey-zak {
+  border-radius: 50%;
+  width: 50vw;
+  max-height: 40vh;
+}
+
 /***************************************/
 /* HAMBURGER MENU COMPONENT*/
 /***************************************/
@@ -127,7 +133,7 @@ main {
 img#toohey-zak {
   border-radius: 50%;
   width: 50vw;
-  max-height: 50vh;
+  max-height: 40vh;
 }
 
 .aboutme-text {
